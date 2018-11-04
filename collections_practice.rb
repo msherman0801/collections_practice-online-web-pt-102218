@@ -42,12 +42,11 @@ end
 
 def add_s(array)
   out = []
-  array.each do |i|
+  array.collect do |i|
     if i != array[1]
       out.push(i + "s")
     else
       out.push(i)
     end
   end
-  out
 end
